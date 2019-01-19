@@ -1,0 +1,2 @@
+SELECT person_id, persons.name , GROUP_CONCAT(hobbies.name separator ', ') AS person_hobbies FROM hobbies INNER JOIN persons ON persons.id=hobbies.person_id GROUP BY persons.id, persons.name  
+ORDER BY `persons`.`name` ASC
